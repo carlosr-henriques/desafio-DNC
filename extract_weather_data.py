@@ -13,7 +13,6 @@ import os
 load_dotenv(find_dotenv())
 
 con = sqlite3.connect("desafio_escola_dnc.db")
-cur = con.cursor()
 engine = create_engine('sqlite:///desafio_escola_dnc.db', echo=False)
 
 LANG = "pt_br"
