@@ -10,7 +10,7 @@ import os
 load_dotenv(find_dotenv())
 
 con = sqlite3.connect("desafio_escola_dnc.db")
-engine = create_engine('sqlite:///database/desafio_escola_dnc.db', echo=False)
+engine = create_engine('sqlite:///desafio_escola_dnc.db', echo=False)
 
 google_maps = googlemaps.Client(key=os.getenv("GOOGLEMAPS_API_KEY"))
 
