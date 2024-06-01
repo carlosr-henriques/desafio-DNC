@@ -34,6 +34,3 @@ cur.execute("""create table tbl_directions(
     foreign key (weather_id) references tbl_weather(id)
 );""")
 
-cur.execute("drop table tb_weather")
-cur.execute("drop table tbl_directions")
-
