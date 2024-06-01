@@ -1,6 +1,18 @@
-# 1. Extração de Dados
+# 🧠 Contexto do desafio
 
-Para obter os dados sobre Clima e Trânsito, utilizei a API da `OpenWeather` e `Google Maps`. 
+A Zebrinha Azul é uma startup inovadora que se destaca no mercado por sua expertise em lidar com dados de clima e tráfego. A empresa fornece soluções avançadas para otimizar operações logísticas e proporcionar relatórios para clientes de diversos setores. Como um(a) engenheiro(a) de dados, sua missão é desenvolver um sistema robusto e escalável para integrar, processar e analisar os dados de clima e tráfego que a Zebrinha Azul coleta.
+
+# Solução proposta
+
+Criar um web app com uma interface simples e familiar ao usuário. Para ter a rota otimizada e os clima, serão extraídos dados da API da `OpenWeather` e `Google Maps`. 
+
+O usuário terá duas tarefas dentro do web app:
+1. Inserir a cidade e país que deseja obter os dados de clima;
+2. Inserir a localização de origem e localização de destino, além do modo de viagem, que pode ser: driving, walking, bicycling e transit. Essas opção são disponibilizadas pela API do Google Maps.
+
+Por fim, é gerado os dados de clima em formato de cards e o mapa da rota, com opções de zoom e movimentação do mapa, na interface do Google Maps.
+
+# 1. Extração de Dados
 
 A API da OpenWeather pode ser obtida com a `Current Weather Data`, na página API, ao criar a chave de acesso e inserir a chave no link da API. 
 
