@@ -49,7 +49,6 @@ def get_weather(df):
 
 def insert_weather_data(df):
     df.to_sql("tbl_weather", con = engine, if_exists = "append", index = False)
-    con.close()
 
 def unity_transform(df):
 
