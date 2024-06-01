@@ -110,16 +110,4 @@ def utc_transform(df):
 
     return df
 
-coordinates = get_coordinates("Rio de Janeiro", "Brazil")
-
-df = pd.DataFrame(coordinates)
-df = create_weather_index(df)
-
-df_weather = df.apply(lambda x: get_weather(x), axis=1)
-df = pd.concat([df, pd.json_normalize(df_weather)], axis=1)
-
-df = unity_transform(df)
-
-insert_weather_data(df)
-
 
