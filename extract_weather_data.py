@@ -15,25 +15,6 @@ load_dotenv(find_dotenv())
 con = sqlite3.connect("desafio_escola_dnc.db")
 cur = con.cursor()
 
-engine = create_engine('sqlite:///desafio_escola_dnc.db', echo=False)
-
-cur.execute("""create table tbl_weather(
-    weather_id integer primary key,
-    city text not null,
-    country text not null,
-    latitude text not null,
-    longitude text not null,
-    temp_predicted real not null,
-    temp_feels_like_predicted real not null,
-    temp_max_predicted real not null,
-    temp_min_predicted real not null,
-    humidity real not null,
-    wind_speed real not null,
-    cloudiness real not null,
-    description text not null,
-    sunset_utc text not null
-);""")
-
 LANG = "pt_br"
 openweather_api = os.getenv("OPENWEATHER_API_KEY")
 
