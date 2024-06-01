@@ -78,6 +78,8 @@ Há cards com informações do clima seguido de um gráfico abaixo com a melhor 
 
 # Como usar o projeto?
 
+Baixe todos os arquivos com: git clone https://github.com/carlosr-henriques/desafio-DNC.git
+
 Além do plano de acesso às chaves da API, devem ser baixados os seguintes pacotes:
 
 - pip install pandas
